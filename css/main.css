@@ -1,0 +1,247 @@
+/*index.html*/
+
+html {
+  background: url(./images/bgindex.jpg) no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Advent Pro', sans-serif;
+}
+
+h1, h5 {
+  color: green;
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+  font-family: 'Titillium Web', sans-serif;
+  color: white;
+}
+
+li {
+  font-family: arial;
+}
+
+.box {
+  font-family: 'Carter One', cursive;
+  max-width: 40%;
+  height: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  color: green;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.image {
+  max-width: 180px;
+  min-width: 100px;
+  border-radius: 50%;
+  position: relative;
+  bottom: 0;
+}
+
+.bahamut {
+  text-align: center;
+  color: pink;
+}
+
+.center {
+  text-align: center;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.web {
+  font-size: 18px;
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  color: black;
+}
+
+a.impact:link {
+  color: white;
+  text-decoration: none;
+}
+
+a.impact:visited {
+  font-family: 'Carter One', cursive;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+a.impact:hover {
+  color: green;
+  text-decoration: none;
+}
+
+.logo {
+  margin: 0;
+}
+
+.fa:hover {
+  color: black;
+}
+
+.url {
+  position: relative;
+  bottom: 0;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.fa-facebook {
+  background: #245EEE;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-github {
+  background: #000000;
+  color: white;
+}
+
+a.url-fb:hover {
+  color: white;
+  background: blue;
+}
+
+a.url-fb:visited {
+  color: white;
+}
+
+a.url-tw:hover {
+  color: white;
+  background: blue;
+}
+
+a.url-tw:visited {
+  color: white;
+}
+
+a.url-ig:hover {
+  color: white;
+  background: blue;
+}
+
+a.url-ig:visited {
+  color: white;
+}
+
+a.url-gt:hover {
+  color: white;
+  background: blue;
+}
+
+a.url-gt:visited {
+  color: white;
+}
+
+/*contact.html*/
+
+.button {
+  background: green;
+  width: 100px;
+  padding: 12px;
+  text-align: center;
+  margin-top: 25px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+}
+
+.button:hover {
+  box-shadow: 0 10px 10px 0 rgba(255, 255, 255, 0.10), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  color: white;
+  cursor: pointer;
+}
+
+.container {
+  width: 50%;
+  position: absolute;
+  margin: 50px auto;
+  box-sizing: border-box;
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  background: white;
+}
+
+.container p {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #000000;
+  letter-spacing: 1px;
+}
+
+.input, .msg, .area {
+  font-family: 'Quicksand', sans-serif;
+  width: 90%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 2px solid #e9eaea;
+  font-size: 14px;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.5s ease;
+}
+
+.login .input {
+  width: 45%;
+  float: left;
+  margin-right: 5%;
+}
+
+.login .input:last-child {
+  margin-right: 0;
+}
+
+.msg .area {
+  height: 200px;
+}
+
+.btn {
+  width: 200px;
+  background #486255;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.input:focus, .msg .area:focus {
+  border: 2px solid #486255;
+}
+
+@media only screen and (max-width: 800px) {}

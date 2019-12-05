@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Tutorial</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="css/tutorial_style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h1>Welcome</h1>
+    <img src="images/css.png"> 
+
+   <div class="col-12 col-md-9 col-lg-10">
+        <div class="row line">
+          <div class="col-12 col-lg-6 box">
+           <h1>CSS Tutorial</h1>
+            <!-- <p>The language for building web pages</p>
+            <div class="btn grey-btn"><a href="#learnhtml">LEARN HTML</a></div>
+            <div class="btn grey-btn"><a href="#htmlreference">HTML REFERENCE</a></div> -->
+          </div>
+          <hr>
+          <div class="flex-item flex-column">
+           
+           <h2 class="add-top-margin">Introduction Of CSS</h2>
+            <p class="text">
+              <ul> 
+           
+                  <li>CSS is a language that describes the style of an HTML document.</li>
+                  <li>CSS describes how HTML elements should be displayed.</li>
+                  <li>This tutorial will teach you CSS from basic to advanced.</li>
+                  <li>CSS stands for Cascading Style Sheets</li>
+                  <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+                  <li>External stylesheets are stored in CSS files</li>
+              </ul>
+           
+            </p>
+             <h2 class="add-top-margin">Why Use CSS?</h2>
+             <ul><li>CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</li></ul>
+           </div> 
+          
+          <div class="col-12 col-lg-6 d-none d-sm-block box">
+            <div class="grey-box text-left">
+               <h2>CSS Example:</h2>
+              
+              <div class="code">
+               
+                <span class="brown">body</span>
+                <span>{</span>
+                <br>
+                &nbsp;&nbsp;&nbsp;<span class="red">background-color:</span>
+                <span class="mediumblue">#d0e4fe;</span>
+                <br>
+                <span>}</span>
+                <br>
+                <span class="brown">h1</span>
+                <span>{</span>
+                <br>
+                &nbsp;&nbsp;&nbsp;<span class="red">color:</span>
+                <span class="mediumblue">orange;</span>
+                <br>
+                &nbsp;&nbsp;&nbsp;<span class="red">text-align:</span>
+                <span class="mediumblue">center;</span>
+                <br>
+                <span>}</span>
+                <br>
+                <span class="brown">p</span>
+                <span>{</span>
+                <br>
+                &nbsp;&nbsp;&nbsp;<span class="red">font-family:</span>
+                <span class="mediumblue">"Times New Roman";</span>
+                <br>
+                &nbsp;&nbsp;&nbsp;<span class="red">font-size:</span>
+                <span class="mediumblue">20px;</span>
+                <br>
+                <span>}</span>
+                
+              </div>
+              <div class="btn green-btn"><a href="#tryityourself">Try it Yourself <i class="fa fa-angle-double-right"></i></a></div>
+            
+            </div>
+          </div>
+        </div>
+        <hr>
+         <div class="flex-item flex-column">
+            <h2 class="add-top-margin">CSS Syntax :</h2>
+            <p class="text">
+              <ul> 
+                  <li>A CSS rule-set consists of a selector and a declaration block:</li>
+                  <li>The selector points to the HTML element you want to style</li>
+                  <li>The declaration block contains one or more declarations separated by semicolons.</li>
+                  <li>Each declaration includes a CSS property name and a value, separated by a colon.</li>
+                  <li>A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.</li> 
+              </ul>
+              
+           
+            </p>
+            <div class="grey-box text-left">
+               <h2>CSS Example:</h2>
+               <h2>In this example all <spam><</spam><spam>p</spam><spam>></spam> elements will be center-aligned, with a red text color:</h2>
+              <div class="code">
+                
+                 <span class="brown">P</span>
+                <span>{</span>
+                <br>
+                &nbsp;&nbsp;&nbsp;<span class="red">background-color:</span>
+                <span class="mediumblue">red;</span><br>
+                &nbsp;&nbsp;&nbsp;<span class="red">text-align:</span>
+                <span class="mediumblue">center;</span>
+                <br>
+                <span>}</span>
+ 
+              </div>
+
+            </div>
+           </div>
+           <hr>
+
+           <h2>CSS Comments</h2>
+           <ul><li>Comments are used to explain the code, and may help when you edit the source code at a later date.</li>
+            <li>Comments are ignored by browsers.</li></ul>
+
+           <div class="grey-box text-left">
+               <h2>CSS Example:</h2>
+               <h2>A CSS comment starts with /* and ends with */. Comments can also span multiple lines:</h2>
+              <div class="code">
+                
+                 <span class="brown">P</span>
+                <span>{</span>
+                <br>
+                &nbsp;&nbsp;&nbsp;<span class="red">background-color:</span>
+                <span class="mediumblue">red;</span><br>
+                /* This is a single-line comment */ <br>
+                &nbsp;&nbsp;&nbsp;<span class="red">text-align:</span>
+                <span class="mediumblue">center;</span>
+                <br>
+                <span>}</span>
+              </div>
+    
+            </div>
+            <h2>CSS Selectors</h2>
+           <ul><li>CSS selectors are used to "find" (or select) the HTML elements you want to style.</li></ul>
+           <h2>We can divide CSS selectors into five categories:</h2>
+           <ul>
+             <li>Simple selectors (select elements based on name, id, class)</li>
+             <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+             <li>Pseudo-class selectors (select elements based on a certain state)</li>
+             <li>Pseudo-elements selectors (select and style a part of an element)
+             </li>
+             <li>Attribute selectors (select elements based on an attribute or attribute value)
+             </li>
+            </ul>
+            <h2>The CSS element Selector</h2>
+            <ul><li>The element selector selects HTML elements based on the element name.</li>
+           
+
+           <div class="grey-box text-left">
+               <h2>CSS Example:</h2>
+               <h2>Here, all  <spam><</spam><spam>p</spam><spam>></spam> elements on the page will be center-aligned, with a red text color:</h2>
+              <div class="code">
+                
+                 <span class="brown">P</span>
+                <span>{</span>
+                <br>
+                &nbsp;&nbsp;&nbsp;<span class="red">background-color:</span>
+                <span class="mediumblue">red;</span><br>
+                &nbsp;&nbsp;&nbsp;<span class="red">text-align:</span>
+                <span class="mediumblue">center;</span>
+                <br>
+                <span>}</span>
+
+              </div>
+
+            </div>
+
+           </div> 
+           <hr>
+           <h2>The CSS id Selector</h2>
+           <ul><li>The id selector uses the id attribute of an HTML element to select a specific element.</li>
+           <li>The id of an element is unique within a page, so the id selector is used to select one unique element!
+
+              To select an element with a specific id, write a hash (#) character, followed by the id of the element.</li></ul>
+
+           <div class="grey-box text-left">
+               <h2>CSS Example:</h2>
+               <h2>The CSS rule below will be applied to the HTML element with id="para1":</h2>
+              <div class="code">
+                
+                 <span class="brown">#pral</span>
+                <span>{</span>
+                <br>
+                &nbsp;&nbsp;&nbsp;<span class="red">background-color:</span>
+                <span class="mediumblue">red;</span><br>
+               
+                &nbsp;&nbsp;&nbsp;<span class="red">text-align:</span>
+                <span class="mediumblue">center;</span>
+                <br>
+                <span>}</span>
+    
+              </div>
+    
+            </div>
+          </div>
+          <hr>
+           <h2>The CSS class Selector</h2>
+           <ul><li>The class selector selects HTML elements with a specific class attribute.</li>
+           <li>To select elements with a specific class, write a period (.) character, followed by the class name</li></ul>
+
+           <div class="grey-box text-left">
+               <h2>CSS Example:</h2>
+               <h2>In this example all HTML elements with class="center" will be red and center-aligned::</h2>
+              <div class="code">
+                
+                 <span class="brown">.center</span>
+                <span>{</span>
+                <br>
+                &nbsp;&nbsp;&nbsp;<span class="red">background-color:</span>
+                <span class="mediumblue">red;</span><br>
+              
+                &nbsp;&nbsp;&nbsp;<span class="red">text-align:</span>
+                <span class="mediumblue">center;</span>
+                <br>
+                <span>}</span>
+    
+              </div>
+     
+            </div>
+           </div>
+        
+           <hr>
+           <h2>The CSS Universal Selector</h2>
+           <ul><li>The universal selector (*) selects all HTML elements on the page.</li></ul>
+      
+           <div class="grey-box text-left">
+               <h2>CSS Example:</h2>
+               <h2>The CSS rule below will affect every HTML element on the page: </h2>
+              <div class="code">
+                
+                 <span class="brown">*</span>
+                <span>{</span>
+                <br>
+                &nbsp;&nbsp;&nbsp;<span class="red">background-color:</span>
+                <span class="mediumblue">red;</span><br>
+               
+                &nbsp;&nbsp;&nbsp;<span class="red">text-align:</span>
+                <span class="mediumblue">center;</span>
+                <br>
+                <span>}</span>
+              </div>
+            </div>
+         </div>
+         <h2>How To Add CSS</h2>
+           <ul><li>When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.</li></ul>
+             <h2>Three Ways to Insert CSS</h2>
+             <ul><li>External CSS</li>
+             <li>Internal CSS</li>
+           <li>Inline CSS
+           </li></ul>
+          
+          <h2>External CSS</h2>
+           <ul><li>An external style sheet can be written in any text editor, and must be saved with a .css extension.</li>
+            <li>The external .css file should not contain any HTML tags.</li>
+          <li>Here is how the "mystyle.css" file looks like:</li>
+        </ul>
+      
+           <div class="grey-box text-left">
+               <h2>"mystyle.css"</h2>
+               
+              <div class="code">
+                
+                 <span class="brown">body</span>
+                <span>{</span>
+                <br>
+                &nbsp;&nbsp;&nbsp;<span class="red">background-color:</span>
+                <span class="mediumblue">red;</span><br>
+               
+                &nbsp;&nbsp;&nbsp;<span class="red">text-align:</span>
+                <span class="mediumblue">center;</span>
+                <br>
+                <span>}</span>
+              </div>
+            </div>
+         </div>
+          <h2>Internal CSS</h2>
+           <ul><li>An internal style sheet may be used if one single HTML page has a unique style.</li>
+            <li>The internal style is defined inside the <spam><</spam><spam>style</spam><spam>></spam> element, inside the head section.</li></ul>
+      
+           <div class="grey-box text-left">
+               <h2>CSS Example:</h2>
+               <h2>Internal styles are defined within the <spam><</spam><spam>style</spam><spam>></spam> element, inside the <spam><</spam><spam>head</spam><spam>></spam>section of an HTML page: </h2>
+              <div class="code">
+              <span class="blue"><</span><span class="brown">!DOCTYPE</span>
+                <span class="red">html</span><span class="blue">></span>
+                <br>
+                <span class="blue"><</span><span class="brown">html</span><span class="blue">></span>
+                <br>
+                <span class="blue"><</span><span class="brown">title</span><span class="blue">></span>HTML Tutorial<span class="blue"><</span><span class="brown">/title</span><span class="blue">></span>
+                <br>
+                <span class="blue"><</span><span class="brown">head</span><span class="blue">></span><br>
+                <span class="blue"><</span><span class="brown">style</span><span class="blue">></span><br>
+                <span class="brown">body</span>
+                <span>{</span>
+                <br>
+                &nbsp;&nbsp;&nbsp;<span class="red">background-color:</span>
+                <span class="mediumblue">red;</span><br>
+               
+                &nbsp;&nbsp;&nbsp;<span class="red">text-align:</span>
+                <span class="mediumblue">center;</span>
+                <br>
+                <span>}</span>
+                <br>
+                <span class="brown">h1</span>
+                <span>{</span>
+                <br>
+                &nbsp;&nbsp;&nbsp;<span class="red">background-color:</span>
+                <span class="mediumblue">red;</span><br>
+               
+                &nbsp;&nbsp;&nbsp;<span class="red">text-align:</span>
+                <span class="mediumblue">center;</span>
+                <br>
+                <span>}</span>
+                <span class="blue"><</span><span class="brown">/style</span><span class="blue">></span><br>
+                <span class="blue"><</span><span class="brown">/head</span><span class="blue">></span><br>
+                <span class="blue"><</span><span class="brown">body</span><span class="blue">></span>
+                <br>
+                <br>
+                <span class="blue"><</span><span class="brown">h1</span><span class="blue">></span>This is a heading<span class="blue"><</span><span class="brown">/h1</span><span class="blue">></span>
+                <br>
+                <span class="blue"><</span><span class="brown">p</span><span class="blue">></span>This is a paragraph.<span class="blue"><</span><span class="brown">/p</span><span class="blue">></span>
+                <br>
+                <br>
+                <span class="blue"><</span><span class="brown">/body</span><span class="blue">></span>
+                <br>
+                <span class="blue"><</span><span class="brown">/html</span><span class="blue">></span>
+          
+              </div>
+            </div>
+         </div>
+         <h2>Inline CSS</h2>
+           <ul><li>An inline style may be used to apply a unique style for a single element.</li>
+            <li>To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property..</li></ul>
+      
+           <div class="grey-box text-left">
+               <h2>CSS Example</h2>
+               <h2>Inline styles are defined within the "style" attribute of the relevant element:</h2>
+               
+              <div class="code">
+                
+                <span class="blue"><</span><span class="brown">!DOCTYPE</span>
+                <span class="red">html</span><span class="blue">></span>
+                <br>
+                <span class="blue"><</span><span class="brown">html</span><span class="blue">></span>
+                <br>
+                <span class="blue"><</span><span class="brown">title</span><span class="blue">></span>HTML Tutorial<span class="blue"><</span><span class="brown">/title</span><span class="blue">></span>
+                <br>
+                <span class="blue"><</span><span class="brown">body</span><span class="blue">></span>
+                <br>
+                <br>
+                <span class="blue"><</span><span class="brown">h1 style="color:blue;text-align:center;"</span><span class="blue">></span>This is a heading<span class="blue"><</span><span class="brown">/h1</span><span class="blue">></span>
+                <br>
+                <span class="blue"><</span><span class="brown">p style="color:blue;text-align:center;"</span><span class="blue">></span>This is a paragraph.<span class="blue"><</span><span class="brown">/p</span><span class="blue">></span>
+                <br>
+                <br>
+                <span class="blue"><</span><span class="brown">/body</span><span class="blue">></span>
+                <br>
+                <span class="blue"><</span><span class="brown">/html</span><span class="blue">></span>
+                
+              </div>
+            </div>
+         </div>
+         <h2>important CSS Attributes</h2>
+         <ul>
+           <li>CSS Colors</li>
+           <li>CSS Backgrounds</li>
+           <li>CSS Borders</li>
+           <li>CSS Margins</li>
+           <li>CSS Padding</li>
+           <li>CSS Height and Width</li>
+           <li>CSS Box Model</li>
+           <li>CSS Outline</li>
+           <li>CSS Text</li>
+           <li>CSS Fonts</li>
+           <li>CSS Icons</li>
+           <li>CSS Links</li>
+           <li>CSS Combinatorss</li>
+           <li>CSS Opacity / Transparency</li>
+           <li>CSS Navigation Bar</li>
+           <li>CSS Dropdowns</li>
+           <li>CSS Specificity</li>
+           
+         </ul>
+
+         <hr>
+         <br>
+
+        <button class="green-btn">Change user</button>
+        <button class="green-btn"><a href="quiz.html">QUIZZES</a></button>
+  <script src="js/main1.js"></script>
+  </body>
+</html>
